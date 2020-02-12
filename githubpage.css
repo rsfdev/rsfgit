@@ -1,0 +1,81 @@
+            p, li {
+                font-family: Montserrat, sans-serif;
+                display: block;
+                margin: 12px;
+                letter-spacing: -1px;
+            }
+            body {
+                font-size: 1.5em;
+                background-color: rgb(148, 182, 182);
+            }
+            h1 {
+                color: rgb(102, 255, 97);
+            }
+
+            p {
+                color: rgb(116, 97, 200)
+                
+            }
+
+            #reference1 {
+                background-color: rgba(40, 128, 76, 0.657);
+                font-family: "Helvetica", serif;
+            }
+            
+            #first-line {
+                font-family: monospace;
+            }
+
+            
+            #bottom {
+                color: black;
+                font-size: 1rem;
+            }
+
+            .skills {
+                font: italic Montserrat;
+                color: white;
+                line-height: 1.5em;
+                background-color: gray;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                max-width: auto;
+
+            }
+            .skillsbox {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 200px;
+                max-width: auto;
+            }
+            .picture {
+                border-radius: 100%;
+                width: 150px;
+                margin: 40px;
+                float: left;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                margin-top: 60px;
+                
+            }
+            .button {
+                padding: 1em 1.8em;
+                border-radius: 30px;
+                background-color: #0fa36b;
+                color: white;
+                font-family: Montserrat, sans-serif;
+                font-size: 1rem;
+                line-height: 1;
+                font-weight: 10;
+           }
+           .important {
+               color: red;
+           }
+           #important2 {
+               background-color: darkorange;
+               border-radius: 50px;
+               width: 60%;
+               height: 100px;
+               overflow: auto;
+           }
