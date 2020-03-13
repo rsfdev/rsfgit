@@ -22,4 +22,3 @@ switch (text) {
   default:
     text = "Looking forward to the Weekend";
 }
-testing

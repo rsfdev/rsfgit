@@ -8,4 +8,3 @@ if (a > b) {
 } else {
   console.log('b is greater than a');
 };
-testing

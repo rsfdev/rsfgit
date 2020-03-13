@@ -13,4 +13,3 @@ if (percentage >= 90) {
 } else {
   console.log('F');
 }
-testing

@@ -19,4 +19,3 @@ if ((d % 2 != 0 || e % 2 != 0 || f % 2 != 0)) {
   isOdd = true;
 };
 console.log(isOdd);
-testing

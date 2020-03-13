@@ -8,4 +8,3 @@ if (a + b + c == 180) {
 else {
     console.log('ERROR : Sum of angles must be equal to 180 degrees.');
 };
-testing
