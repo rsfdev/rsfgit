@@ -1,4 +1,3 @@
-
 let day = new Date().getDay();
 
 switch (day) {
@@ -33,3 +32,4 @@ switch (day) {
     default:
       console.log('Error!!!');
     }
+    

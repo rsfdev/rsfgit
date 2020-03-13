@@ -9,8 +9,6 @@ switch (new Date().getDay()) {
     text = "Looking forward to the Weekend";
 }
 
-
-
 let text=new Date().getDay();
 switch (text) {
   case 4:

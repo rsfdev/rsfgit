@@ -1,5 +1,4 @@
 let chessPiece = 'Bishop';
-
 switch (chessPiece.toLowerCase()) {
     case ('king'):
     console.log('king -> move vertically one square');
