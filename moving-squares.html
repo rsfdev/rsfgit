@@ -43,47 +43,25 @@
     }
 
     @keyframes exercise-1 {
-    0%   {left:0px;}
+    0%   {left: 0px;}
     /* 50%  {left:100px;} */
     100% {left: 94%;}
   }
 
   #exercise-2 {
     position: relative;
-    animation-name: exercise-2;
-    animation-duration: 3s;
-    animation-delay: 1s;
+    animation-name: exercise-1;
+    /* animation-direction: reverse; */
+    animation-duration: 2s;
+    animation-delay: 2s;
+    /* animation-fill-mode: backwards; */
+    animation-timing-function: ease-out;
+    /* animation-play-state: paused; */
     }
 
     @keyframes exercise-2 {
     0%   {left: 200px;}
     100% {left: 0;}
-  }
-
-  #exercise-3 {
-    position: relative;
-    animation-name: exercise-3;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    }
-
-    @keyframes exercise-3 {
-    0%   {left:0px;}
-    /* 50%  {left:100px;} */
-    100% {left: 94%;}
-  }
-
-  #exercise-4 {
-    position: relative;
-    animation-name: exercise-4;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    }
-
-    @keyframes exercise-4 {
-    0%   {left:94px;}
-    /* 50%  {left:100px;} */
-    100% {left: 0%;}
   }
   </style>
 </head>

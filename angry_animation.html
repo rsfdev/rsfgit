@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angry Animation - Shaking</title>
+    <style>
+      div.at-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      .at-item {
+        color: #3079ed;
+        animation-name: angry-animation;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+      }
+      @keyframes angry-animation {
+        0%{
+          transform: rotate(-15deg);
+          -webkit-transform: rotate(-15deg);
+          -ms-transform: rotate(-15deg);
+        }
+        2%{
+          transform: rotate(15deg);
+          -webkit-transform: rotate(15deg);
+          -ms-transform: rotate(15deg);
+        }
+        4%{
+          transform: rotate(-18deg);
+          -webkit-transform: rotate(-18deg);
+          -ms-transform: rotate(-18deg);
+        }
+        6%{
+          transform: rotate(18deg);
+          -webkit-transform: rotate(18deg);
+          -ms-transform: rotate(18deg);
+        }
+        8%{
+          transform: rotate(-22deg);
+          -webkit-transform: rotate(-22deg);
+          -ms-transform: rotate(-22deg);
+        }
+        10%{
+          transform: rotate(22deg);
+          -webkit-transform: rotate(22deg);
+          -ms-transform: rotate(22deg);
+        }
+        12%{
+          transform: rotate(-18deg);
+          -webkit-transform: rotate(-18deg);
+          -ms-transform: rotate(-18deg);
+        }
+        14%{
+          transform: rotate(18deg);
+          -webkit-transform: rotate(18deg);
+          -ms-transform: rotate(-18deg);
+        }
+        16%{
+          transform: rotate(-12deg);
+          -webkit-transform: rotate(-12deg);
+          -ms-transform: rotate(-12deg);
+        }
+        18%{
+          transform: rotate(-12deg);
+          -webkit-transform: rotate(-12deg);
+          -ms-transform: rotate(-12deg);
+        }
+        20%{
+          transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class='at-container'>
+      <h3 class='at-item'>Animation
+      </h3>
+    </div>
+</body>
+</html>
