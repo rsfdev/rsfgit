@@ -1,4 +1,3 @@
-
 console.log(
     document.createElement("div")
     )
@@ -15,6 +14,3 @@ console.log(
 
 let p1 = document.createElement("p").innerHTML = "Hello!";
 console.log(p1)
-
-
-

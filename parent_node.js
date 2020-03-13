@@ -1,4 +1,3 @@
-
 let primeiroFilhoDoFilho1 = document.createElement("p");
 primeiroFilhoDoFilho1.innerHTML = "Testing primeiroFilhoDoFilho1";
 
@@ -22,4 +21,3 @@ console.log(document.querySelector("primeiroFilhoDoFilho").appendChild(primeiroF
 
 //let color1 = document.getElementById("elementoOndeVoceEsta").parentNode.style.color = "red";
 //alert(color1) //appendChild
-

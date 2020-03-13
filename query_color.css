@@ -17,7 +17,7 @@
 	flex-direction:column;
     justify-content:space-evenly;
     border: solid black 4px;
-    }
+}
 .column_left>div, .column_right>div{
 	height:5rem;
 	width:5rem ;
