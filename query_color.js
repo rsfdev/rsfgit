@@ -30,5 +30,4 @@ document.querySelectorAll("div>div>div>div").forEach((mini)=>{
 document.querySelectorAll("#stack>div").forEach((e)=>{
     var mini_top=document.querySelector("."+e.className+">div>div")
 	mini_top.style.backgroundColor="pink"
-
 })

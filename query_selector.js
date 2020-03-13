@@ -1,4 +1,3 @@
-
 console.log(
     document.querySelector("#parent"),
     document.querySelector("p.test3"),
@@ -31,5 +30,4 @@ if (search = document.getElementById("father").querySelectorAll(".ubuntu1")) {
 if (document.getElementById("father").querySelectorAll(".ubuntu1")[0].length > 1) {
 
     console.log("Hi!");
-
 }
