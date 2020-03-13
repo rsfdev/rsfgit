@@ -28,3 +28,4 @@ if (baseSalary <= 1903.98) {
 };
 
 console.log("Salário: " + (baseSalary - irAliquot));
+testing

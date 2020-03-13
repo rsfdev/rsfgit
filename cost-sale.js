@@ -7,3 +7,4 @@ if (costOfProduct > 0 && saleValue > 0) {
 } else {
   console.log('Enter a value greater than zero');
 };
+testing

@@ -28,3 +28,4 @@ switch (chessPiece.toLowerCase()) {
     console.log('Error: Please enter a valid chess piece');
     break;
 };
+testing

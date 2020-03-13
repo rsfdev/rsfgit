@@ -13,3 +13,4 @@ switch (day) {
   default:
     console.log = "Looking forward to the Weekend";
 }
+testing
