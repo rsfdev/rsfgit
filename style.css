@@ -1,0 +1,38 @@
+* {
+    border: 1px solid red;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex-container {
+    border: 3px solid black;
+    width: 500px;
+    display: flex;
+    flex-flow: row wrap; /* flex-direction and flex-wrap abbreviation*/
+    justify-content: space-evenly;
+/*    align-items: flex-end; */
+    align-content: flex-start;
+
+}
+
+.box {
+    background: blue;
+    border: 2px solid gray;
+    padding: 0 40px;
+    border-radius: 15px;
+    height: 300px;
+
+}
+
+.flex-container:nth-child(2) > .box {
+    background: green;
+}
+
+.flex-container:nth-child(2) {
+    height: 300px;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+}
