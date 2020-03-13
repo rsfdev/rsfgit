@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changing the background color</title>
+  <style> 
+    div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: changing;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    }
+
+  @keyframes changing {
+    0%   {background-color: red; left:0px;}
+    50%  {background-color: yellow; left:200px;}
+    100% {background-color: red; left:0px;}
+  }
+    </style>
+</head>
+<body>
+  <div></div>
+  <!-- <div class="demo">
+    <div class="grows">This just grows</div>
+    <div class="growsandstays">This grows and stays big</div>
+    <button class="top-button">Hi!</button>
+  </div>
+  <button class="bottom-button">Hi1!</button>
+  <div class="div"></div> -->
+</body>
+</html>
