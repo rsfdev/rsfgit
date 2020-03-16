@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Highlight Menus</title>
+  <style>
+  a {
+    color: #fff;
+    background-color: green;
+    transition: all 0.5s ease-out;
+  }
+
+  a:hover,
+  a:focus {
+    color: red;
+    background-color: #fff;
+  }
+
+  p {
+  padding-left: 60px;
+}
+
+#foo {
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background: #c00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1s;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Links</a>
+  <p>Click anywhere to move the ball</p>
+  <div id="foo"></div>
+  </nav>
+  <script>
+    var f = document.getElementById('foo');
+    document.addEventListener('click', function(ev){
+    f.style.transform = 'translateY('+(ev.clientY-25)+'px)';
+    f.style.transform += 'translateX('+(ev.clientX-25)+'px)';
+},false);
+  </script>
+</body>
+</html>
