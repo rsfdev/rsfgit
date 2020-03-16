@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <style>
+      @keyframes rotating {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .eternal-rotating {
+        width: fit-content;
+        animation: rotating 200ms linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="eternal-rotating">Div with eternal rotating.</div>
+  </body>
+</html>

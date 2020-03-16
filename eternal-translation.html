@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <style>
+      @keyframes translating {
+        0% {
+          transform: translate(200px, 50px);
+        }
+        100% {
+          transform: translate(-20px, -5px);
+        }
+      }
+      .eternal-translation {
+        background-color: green;
+        animation: translating .2s linear infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="eternal-translation">Div with eternal translation.</div>
+  </body>
+</html>
