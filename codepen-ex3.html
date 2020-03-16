@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Highlight Menus</title>
+  <style>
+div.one {
+    
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+div.two {
+    width: 100px;
+    height: 100px;
+    background: blue;
+}
+
+div#main:hover .one  {
+    width: 300px;
+}
+
+div#main:hover .two  {
+    width: 300px;
+}
+  </style>
+</head>
+<body>
+  <h1>Exercise 3</h1>
+  Apply a 1 second transition to the width property of the div one.
+  
+  Apply also a 1 second transition to the width property of the div two, but make sure the animation starts only after the div one has stopped. (hint: use delay)
+  <div id="main">
+      <div class="one"></div><br>
+      <div class="two"></div>
+  </div>
+  
+  <p>Hover over the div element above.</p>
+  <script>
+  </script>
+</body>
+</html>
