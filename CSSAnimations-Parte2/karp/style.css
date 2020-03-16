@@ -1,0 +1,48 @@
+body{
+  padding: 100px;
+}
+.karp {
+  display: block;
+  height: 200px;
+  margin: auto;
+  margin-top: 300px;
+
+  /* animation: splash 1s ease-in-out infinite; */
+
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  
+  /* 
+  animation-name: splash;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-fill-mode: forwards; 
+  */
+
+}
+
+@keyframes splash {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes tackle {
+  0% {
+
+  }
+  50% {
+
+  }
+  100% {
+
+  }
+}

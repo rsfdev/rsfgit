@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Live Lecture 4.7</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+      border: 1px solid red;
+      margin-bottom: 1px;
+    }
+  </style>
+  <script>
+      window.onload = function() {
+          if (typeof(Storage) != "undefined") {
+            let views = Number(localStorage.getItem("views"));
+            if (views) {
+                views += 1;
+                localStorage.setItem("views", views);
+            } else {
+                localStorage.setItem("views", 1);
+            }
+          } else {
+              document.write("Sem suporte para o Web Storage");
+          }
+          let span = document.querySelector("span.views");
+          span.innerHTML = `Número de visitas: ${localStorage.views}`;
+          let color = localStorage.color;
+          if (color) document.body.style.backgroundColor = color;
+          
+          let buttons = document.querySelectorAll("button");
+        //   Erro: o for abaixo iterava sobre a length de buttons
+        //   Como não podemos adicionar event listeners a números, o script dava erro no console
+        //   for (let i in buttons) { 
+          for (let i = 0; i < buttons.length ; i++) {
+            buttons[i].addEventListener("click", function(event) {
+                let color = buttons[i].innerHTML;
+                localStorage.setItem("color", color);
+                document.body.style.backgroundColor = color;
+            })
+          }
+      }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <span class="views"></span>
+  </div>
+  <div class="container">
+    <button>green</button>
+    <button>blue</button>
+    <button>yellow</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Animation Exercise</title>
+  <style>
+    div {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+    }
+
+    @keyframes racing {
+      0% {
+        margin-left: 0px;
+      }
+      100% {
+        margin-left: 1500px;
+      }
+    }
+
+    .car1,
+    .car2,
+    .car3 {
+      margin-left: 0;
+      transform: rotate(90deg);
+      width: 100px;
+      height: auto;
+    }
+
+
+  </style>
+  <script src="script-final.js"></script>
+</head>
+
+<body>
+  <h2>Race!</h2>
+  <button>Start the race!</button>
+  <br>
+  <img src="images/blue-car.png" class="car1">
+  <br>
+  <img src="images/red-car.png" class="car2">
+  <br>
+  <img src="images/orange-car.png" class="car3">
+</body>
+
+</html>
