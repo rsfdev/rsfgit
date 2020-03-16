@@ -1,0 +1,111 @@
+Git&GitHub
+Git Setup
+sudo apt-get install git-all
+
+Update
+git clone git://git.kernel.org/pub/scm/git/git.git
+
+git config
+/etc/gitconfig: válido para todos os usuários no sistema e todos os seus repositórios. Se você passar a opção --system para git config, ele lê e escreve neste arquivo.
+
+~/.gitconfig ou ~/.config/git/config: Somente para o seu usuário. Você pode fazer o Git ler e escrever neste arquivo passando a opção --global.
+
+config no diretório Git (ou seja, .git/config) de qualquer repositório que você esteja usando: específico para este repositório.
+~/.gitconfig
+git config --global user.name "rogerfaustino"
+git config --global user.email roger_faustino@hotmail.com
+Editor:
+git config --global core.editor code --wait
+Config test:
+git config --list
+git --version
+
+Check the SSH keys
+ls -al ~/.ssh
+
+Generate new key
+ssh-keygen -t rsa -b 4096 -C "roger_faustino@hotmail.com"
+Your identification has been saved in /home/roger/.ssh/id_rsa.
+
+Add SSH key in ssh-agent
+start the SSH agent in background
+eval "$(ssh-agent -s)"
+add the private key in ssh-agent
+ssh-add ~/.ssh/id_rsa
+
+Add SSH key in Github account
+sudo apt-get install xclip
+xclip -sel clip < ~/.ssh/id_rsa.pub
+Se xclip não está funcionando, você pode encontrar a pasta oculta .ssh , abrir o arquivo no terminal, e copiar ela.
+cat ~/.ssh/id_rsa.pub
+Dentro da pasta do repositório digite, substituindo o your_user pelo seu usuário do github e name_repository pelo nome do seu repositório.
+
+2. No canto superior direito do Github, clique na sua foto de perfil e clique em Settings.
+3. Na barra lateral esqueda, clique em SSH and GPG keys.
+4. Clique em New SSH key ou Add SSH key.
+5. No campo “Título”, adicione um descrição para a nova chave.
+6. Cole sua chave dentro do campo “Key”.
+7. Clique em Add SSH key.
+
+git remote set-url origin git@github.com:your_user/name_repository.git
+git remote set-url origin git@github.com:rogerfaustino/rsfdev.git
+https://github.com/rsfdev/rsfdev.github.io
+
+git init
+
+touch readme.md
+git add readme.md
+git add .
+git commit -m "my fourth commmit"
+
+git remote add origin git@github.com:rsfdev/rsfgit.git
+git remote add origin https://github.com/rsfdev/rsfgit.git
+
+git remote -v
+
+git push origin master
+
+Repository download
+git clone git://github.com/alebcay/awesome-shell
+
+Clonar o projeto que você criou na última aula para testar como funciona.
+git clone https://github.com/rogerfaustino1/shellrep03022020.git
+
+Do git log ao Pull Request
+
+git log
+git log --oneline
+git log --stat
+git log --patch
+git log --patch --oneline
+git log --graph
+git log --graph --all --decorate --oneline
+
+
+git remote rm https://github.com/rsfdev/rsfgit.git
+git remote -v
+git branch -r
+
+git fetch origin
+
+git checkout feature1
+git pull origin
+git push origin
+
+sequencia
+pegar o https do github
+git clone
+
+git branch
+git checkout branch
+
+git add .
+git commit -m "Insert a new message"
+
+git push --set-upstream origin rsfdev
+
+compare & pull request no Github
+
+
+
+
