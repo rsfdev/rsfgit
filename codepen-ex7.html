@@ -41,7 +41,6 @@ div#loader .green {
     transform-origin: 50% 50%;
 }
 
-
 div#loader .blue {
     display: inline-block;
     position: absolute;
@@ -52,6 +51,7 @@ div#loader .blue {
     background: blue;
     transform-origin: 50% 50%;
 }
+
 
 @keyframes rotating {
     0% {
@@ -65,23 +65,33 @@ div#loader .blue {
 </head>
 <body>
   <h1>Exercise</h1>
-  Add animation to the CSS so that each of the 3 squares rotates with a different speed. The animation should only be active when the "loader" div has class "loading".
-  For testing, the button toggles the loader class between "loading" and "".
+  Add a script to the previous exercise so that the color of each square changes after each loop. The color should be chosen randomly (use the provided function, and existing code).
   <div id="loader" class="loading">
       <div class="red"></div> 
       <div class="green"></div>
       <div class="blue"></div> 
   </div>
+  
   <input type="button" id="button" value="load">
-
   <script>
+var red = document.querySelector('div#loader .red');
+var blue = document.querySelector('div#loader .blue');
+var green = document.querySelector('div#loader .green');
+
+
+
+function randomColor() {
+    return '#'+Math.random().toString(16).substr(-6);
+}
+    
+// Toggle button code. Don't edit.
 var loader = document.getElementById("loader");
 var button = document.getElementById("button");
 button.addEventListener("click", function() {
-    if ( loader.className === "loading" ) {
-        loader.className="";
+    if (loader.className === "loading") {
+        loader.className = "";
     } else {
-        loader.className="loading";
+        loader.className = "loading";
     }
 })
 
