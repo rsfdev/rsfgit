@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 3</title>
+</head>
+<body>
+  <h1 id="click-count">0</h1>
+  <button id="counter">Increment counter</button>
+
+  <script type="text/javascript">
+    let clickCount = 0;
+    let clickCountElement = document.getElementById('click-count');
+    // clickCountElement.innerHTML = '1';
+
+    document.getElementById('counter').addEventListener('click', () => {
+      clickCount += 1;
+      clickCountElement.innerHTML = clickCount;
+    });
+  </script>
+</body>
+</html>
