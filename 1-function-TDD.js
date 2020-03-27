@@ -18,5 +18,5 @@ const result = ['Hello Irina', 'Hello Ashleigh', 'Hello Elsa'];
   um por vez e vá corrigindo a função aos poucos:
 */
 
-assert.strictEqual(typeof people, 'function');
+assert.strictEqual(typeof greetPeople, 'function');
 assert.deepEqual(people, result);
