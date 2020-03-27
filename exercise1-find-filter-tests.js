@@ -42,8 +42,18 @@ const books = [
     releaseYear: 1965,
   },
   {
-    id: 5,
+    id: 6,
     name: 'A Coisa',
+    genre: 'Terror',
+    author: {
+      name: 'Stephen King',
+      birthYear: 1947
+    },
+    releaseYear: 1986,
+  },
+  {
+    id: 5,
+    name: 'A Coisa 5',
     genre: 'Terror',
     author: {
       name: 'Stephen King',
@@ -63,12 +73,20 @@ const books = [
   },
 ];
 
-function authorBornIn1947() {
+// function authorBornIn1947() {
+
+  const filterId = books.filter((item) => {
+    return item.id === 6;
+  });
+  console.log(filterId);
+
+  const filterId2 = books.filter(item => item.id < 2);
+  console.log(filterId2);
+
+  const findId5 = books.find(item => item.id === 3);
+  console.log(findId5);
 
   const findYear = books.find(item => item.author.birthYear === 1947);
+  console.log(findYear.author.name);
 
-  return(findYear.author.name);
-
-}
-
-assert.equal(authorBornIn1947(), 'Stephen King');
+// assert.equal(authorBornIn1947(), 'Stephen King');
