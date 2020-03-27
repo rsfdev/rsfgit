@@ -10,7 +10,7 @@ const info = {
 };
 
 const family = {
-  children: ['Maria', 'João'],
+  children: ['Mary', 'João'],
   wife: 'Ana',
 };
 
@@ -18,27 +18,40 @@ Object.assign(person, info, family)
 console.log(person)
 
 const person1 = {
-  name: 'Roberto',
+  name: 'Robert',
 };
 
 const lastName = {
-  lastName: 'Silva',
+  lastName: 'Andrew',
 };
 
 const clone = Object.assign(person1, lastName);
 
-console.log(clone); // { name: 'Roberto', lastName: 'Silva' }
-console.log(person1); // { name: 'Roberto', lastName: 'Silva' }
+console.log(clone); // { name: 'Robert', lastName: 'Andrew' }
+console.log(person1); // { name: 'Robert', lastName: 'Andrew' }
 
-clone.name = 'Maria';
+clone.name = 'Mary';
 
-console.log('Mudando a propriedade name através do objeto clone')
-console.log(clone); // Output: { name: 'Maria', lastName: 'Silva' }
-console.log(person); // Output: { name: 'Maria', lastName: 'Silva' }
-console.log('--------------');
+// Changing the name property through the clone object'
+console.log(clone); // Output: { name: 'Mary', lastName: 'Andrew' }
+console.log(person1); // Output: { name: 'Mary', lastName: 'Andrew' }
 
-person.lastName = 'Ferreira';
+person1.lastName = 'Eastwood';
 
-console.log('Mudando a propriedade lastName através do objeto person');
-console.log(clone); // Output: { name: 'Maria', lastName: 'Ferreira' }
-console.log(person); // Output: { name: 'Maria', lastName: 'Ferreira' }
+// Changing the lastname property through the person object'
+console.log(clone); // Output: { name: 'Mary', lastName: 'Eastwood' }
+console.log(person1); // Output: { name: 'Mary', lastName: 'Eastwood' }
+
+const person2 = {
+  name:'Peter',
+};
+
+const lastName2 = {
+  lastName: 'Cruise',
+};
+
+const newPerson = Object.assign({},person2,lastName2);
+newPerson.name = 'Andy';
+person2.lastName3 = 'Hawkins';
+console.log(newPerson);
+console.log(person2);
