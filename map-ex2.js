@@ -2,10 +2,10 @@ const numbers = [1, 2, 3, 4, -5];
 
 const negativeNumbers = numbers.map(number => ((number > 0) ? number * (-1) : number));
 
-console.log(negativeNumbers); // [ -1, -2, -3, -4, -5 ]
-console.log(numbers); // [ 1, 2, 3, 4, -5 ]
+console.log(negativeNumbers);
+console.log(numbers);
 
-// using for
+// using "for"
 const negativeNumbers1 = [];
 for (let i = 0; i < numbers.length; i += 1) {
   if (numbers[i] > 0) {
@@ -15,5 +15,5 @@ for (let i = 0; i < numbers.length; i += 1) {
   }
 }
 
-console.log(negativeNumbers1); // [ -1, -2, -3, -4, -5 ]
-console.log(numbers); // [ 1, 2, 3, 4, -5 ]
+console.log(negativeNumbers1);
+console.log(numbers);
