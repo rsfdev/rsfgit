@@ -72,7 +72,7 @@ console.log(foo(2));
 console.log(foo(2, 20));
 
 
-console.log('-----------------------------------6');
+console.log('-----------------------------------7');
 // defining an empty callback
 function ajax (url, cb = function () {}) {
   // ...
