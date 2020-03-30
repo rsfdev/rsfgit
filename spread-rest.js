@@ -1,13 +1,3 @@
-// const arr = [5, 2, 3];
-// const newArr = [3, ...arr],
-
-// function soma(a, b, c) {
-//   return (a + b + c)
-// };
-
-// console.log(soma(1, ...arr));
-// console.log(soma(...arr));
-
 // spread operator
 const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
 let arr2;
