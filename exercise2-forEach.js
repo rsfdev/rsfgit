@@ -66,10 +66,11 @@ const books = [
 function smallerName() {
   let nameBook;
 
-  books.forEach(name => {
-    nameBook = name;
-    if (name.length < nameBook.length) nameBook = name;
-    });
+  books.forEach((bookN) => {
+    if (!nameBook || bookN.name.length < nameBook.length) {
+      nameBook = bookN.name;
+    }
+  });
 
   return nameBook;
 }

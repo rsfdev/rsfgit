@@ -63,14 +63,21 @@ const books = [
   },
 ];
 
-function authorBornIn1947() {
+const expected_result = {
+  author: {
+    birthYear: 1948,
+    name: 'George R. R. Martin'
+  },
+  genre: 'Fantasia',
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  releaseYear: 1991
+};
 
-  // const findYear = books.find(item => item.author.birthYear === 1947);
+function getNamedBook() {
 
-  // return(findYear.author.name);
-
-    return books.find(book => book.author.birthYear === 1947).author.name;
+  return books.find((book) => book.name.length === 26);
 
 }
 
-assert.equal(authorBornIn1947(), 'Stephen King');
+assert.deepEqual(getNamedBook(), expected_result);

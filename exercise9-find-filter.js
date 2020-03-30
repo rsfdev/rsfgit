@@ -63,14 +63,14 @@ const books = [
   },
 ];
 
-function authorBornIn1947() {
+const expected_result = 'O Senhor dos Anéis';
 
-  // const findYear = books.find(item => item.author.birthYear === 1947);
+function authorWith3DotsOnName() {
 
-  // return(findYear.author.name);
-
-    return books.find(book => book.author.birthYear === 1947).author.name;
+  return books.find(book => (
+    book.author.name.split(' ').filter(word => word.endsWith('.')).length === 3
+  )).name;
 
 }
 
-assert.equal(authorBornIn1947(), 'Stephen King');
+assert.deepEqual(authorWith3DotsOnName(), expected_result);
