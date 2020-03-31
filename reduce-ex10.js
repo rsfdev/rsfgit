@@ -16,4 +16,4 @@ const sumPair1 = (currentValue, number) => (
 
 const sumNumbers1 = (array) => array.reduce(sumPair1);
 
-console.log(sumNumbers1(numbers)); // 152
+console.log(sumNumbers1(numbers)); //
