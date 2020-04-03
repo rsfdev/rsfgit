@@ -4,10 +4,10 @@ const array = require('./array')
 // describe.skip('Suíte de Testes', () => {
 
 test('soma 1 e 2 para dar 3', () => {
-  expect(calcs.sum(1, 2)).toEqual(3)
+  expect(calcs1.sum(1, 2)).toEqual(3)
 })
 
-it('divide 10 por 3 para dar 3.33...', () => {
+it.only('divide 10 por 3 para dar 3.33...', () => {
   expect(calcs.division(10, 3)).toBeCloseTo(3.33)
 })
 
@@ -17,7 +17,7 @@ test.skip('retorna apenas os pares no array', () => {
   expect(array.retornePares(array1)).toEqual(array2)
 })
 
-test.only('to contain', () => {
+test('to contain', () => {
   let arraycont = ['item1', 'item2', 'item3']
   expect(array.addItem4(arraycont)).toContain('item4')
 })
