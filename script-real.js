@@ -15,3 +15,6 @@ fetch(url)
   .catch((error) => {
     console.log('Error!!!' + error)
   })
+
+  // Promise.all([promise1, promise2, promise3]) - return all promises
+  // Promise.race([promise1, promise2, promise3]) - return the first one found
