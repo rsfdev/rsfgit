@@ -1,7 +1,12 @@
+import React from 'react';
+import Pokemon from './Pokemon';
+
+
+
 // import React from 'react';
 import React, {Component} from 'react';
 import './App.css';
-import colors from './data';
+import colors from './Pokemon';
 
 class App extends Component {
   constructor(props) {
